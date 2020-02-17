@@ -1,0 +1,84 @@
+\documentclass[12pt,arial]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tgbonum}
+%\usepackage{times}
+%\usepackage[portuges]{babel}
+\usepackage{graphicx}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry} 
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue,  
+    citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue,  
+    urlcolor=blue}
+\usepackage{amsmath, amsthm, amsfonts}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\e}{\varepsilon}
+\newcommand{\dd}{\delta}
+\usepackage{color}
+\usepackage{enumitem}
+%\renewcommand{\normalsize}{\fontsize{12}{16pt}\usefont{OT1}{cmss}{m}{n}}
+% Define date in european format
+\def\today{\number\day\space\ifcase\month\or
+    January\or February\or March\or April\or May\or June\or
+    July\or August\or September\or October\or November\or December\fi
+    \space\number\year}
+
+\setlength{\parskip}{0.25\baselineskip}
+\setlength{\parindent}{0cm}
+%\renewcommand{\baselinestretch}{1.5}
+\usepackage{fancyhdr,lastpage} %cabecalhos e rodapes
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\setlength{\headheight}{10pt}
+\lfoot{} \rfoot{ \hfill \small \thepage/\pageref{lastpage}} \cfoot{} \chead{} 
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+    \noindent
+    \includegraphics[height=1.75cm]{ufsj.jpg} \hfill
+    \includegraphics[height=1.5cm]{gcom.png}    
+%    \vspace{0.1cm}
+    \hrule    
+    \begin{flushright}
+        \begin{minipage}{5.5cm}
+            \scriptsize
+            Control and Modelling Group (GCOM)\\
+            Department of Electrical Engineering \\
+            Federal University of S\~ao Jo\~ao del-Rei \\               
+            Pra\c{c}a Frei Orlando, 170\\
+            36307-654 - S\~ao Jo\~ao del-Rei, MG, Brazil\\[0.25cm]
+            (p): +55 32 984376181\\
+            (e): \href{mailto:nepomuceno@ufsj.edu.br}{nepomuceno@ufsj.edu.br}\\
+            (w): \href{https://ufsj.edu.br/nepomuceno}{https://ufsj.edu.br/nepomuceno} \\
+        \end{minipage}
+    \end{flushright}
+    \vspace{0.05cm}
+
+    
+    \today \\
+   
+  
+    Dear Dr. Jose M. de la Rosa,\\
+   Editor-in-Chief, IEEE Transactions on Circuits and Systems II: Express Briefs \\    
+      
+We are submitting our paper entitled ``\textit{A novel simple digital chaotic system in FPGA''} which we would like to be considered for publication in IEEE Transactions on Circuits and Systems II: Express Briefs.\\
+
+Nonlinear dynamics and chaos, in particular, are evergreen subjects that address many aspects of our everyday life, from weather to cell division. Due to the frequent complexity of the resulting mathematical models, there is always the need for simple models that capture the essence of dynamical complexity, but still allow fast and efficient implementation.\\
+
+Great efforts have been made to represent chaotic maps on digital circuits. However, less attention has been paid to its hardware optimization. This paper aims to implement a very simple digital chaotic system in FPGA. Using hardware description language VHDL, a polarized fixed-point number representation has been applied to depict the chaotic tent map. A hardware-efficient perturbation method is proposed to reduce chaos degradation. This approach has maintained the chaotic properties of the map; what is more, it has significantly reduced the number of logic elements compared to other articles found in the literature.   \\
+
+We believe that our paper opens up new frontiers in the parsimonious creation of digital chaotic models, and due to the underlying experimental and theoretical framework should thus fit perfectly to IEEE Transactions on Circuits and Systems II: Express Briefs.\\
+
+Sincerely,\\
+
+Dr. Erivelton Geraldo Nepomuceno, on behalf of all authors
+          
+    \label{lastpage}
+\end{document}
+
